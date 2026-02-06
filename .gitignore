@@ -1,0 +1,27 @@
+# Build outputs
+Debug/
+Release/
+*.o
+*.d
+*.su
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+
+# IDE files
+.settings/
+.launches/
+.metadata/
+.cproject
+.project
+
+# Temporary files
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Keep linker script
+!*.ld
