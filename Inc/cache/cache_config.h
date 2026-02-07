@@ -1,8 +1,4 @@
-#ifndef CACHE_CACHE_CONFIG_H_
-#define CACHE_CACHE_CONFIG_H_
 
-
-#include <stdint.h>
 
 
 /*
@@ -14,7 +10,11 @@
  * Author:  ME
  * Date: 	05-02-2026
  */
+#ifndef CACHE_CACHE_CONFIG_H_
+#define CACHE_CACHE_CONFIG_H_
 
+
+#include <stdint.h>
 #define CACHE_LINE_SIZE				64											//Line size defined for Cache
 #define CACHE_NUM_WAYS				04											//4 way set associative
 
@@ -22,13 +22,13 @@
 
 
 #define CACHE_NUM_LINES				(CACHE_SIZE / CACHE_LINE_SIZE)
-#define CACHE_NUM_SET				(CACHE_NUM_LINES / CACHE_NUM_WAYS)
+#define CACHE_NUM_SETS				(CACHE_NUM_LINES / CACHE_NUM_WAYS)
 
 #define CACHE_OFFSET_BITS			06
 #define CACHE_OFFSET_MASK			((1<<CACHE_OFFSET_BITS)-1)
 
 #define CACHE_SET_INDEX_BITS		05
-#define CACHE_SET_INDEX_MASK		((1<<CACHE_SET_INDEX_MASK)-1)
+#define CACHE_SET_INDEX_MASK		((1<<CACHE_SET_INDEX_BITS)-1)
 
 #define CACHE_TAG_BITS				21
 
@@ -39,10 +39,11 @@
 
 #define CACHE_ENABLE_STATS			1
 #define CACHE_ENABLE_ASSERT			1
-
 #if CACHE_ENABLE_ASSERT
-#define CACHE_ASSERT(expr)	if(!(expr)) while(1)
+	#define CACHE_ASSERT(expr)	if(!(expr)) while(1)
 #else
-#define CACHE_ASSERT(expr)  ((void)0)
+	#define CACHE_ASSERT(expr)  ((void)0)
+#endif
+
 
 #endif /* CACHE_CACHE_CONFIG_H_ */

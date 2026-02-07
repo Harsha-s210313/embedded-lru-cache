@@ -10,7 +10,7 @@
 
 #include<stdint.h>
 #include<stdbool.h>
-#include<cache_config.h>
+#include<cache/cache_config.h>
 
 
 typedef struct{
