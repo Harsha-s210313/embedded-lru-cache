@@ -252,7 +252,7 @@ for (int i = 0; i < 1000; i++) {
 ### Build & Flash
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/embedded-lru-cache.git
+git clone https://github.com/Harsha-210313/embedded-lru-cache.git
 cd embedded-lru-cache
 
 # Build
