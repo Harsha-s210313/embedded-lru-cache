@@ -286,14 +286,12 @@ CACHE_CONTROLLER/
 - [x] Phase 0: Foundation & memory layout
 - [x] Phase 1: Core cache operations
 - [x] Phase 2: Flash interface & main API
-
-### Upcoming 🔜
-- [ ] Phase 3: Statistics & utility functions
-- [ ] Phase 4: Testing & validation
-- [ ] Phase 5: Performance optimization
-- [ ] Phase 6: Documentation & analysis
+- [x] Phase 3: Statistics & utility functions
+- [x] Phase 4: Testing & validation
 
 ### Future Enhancements 🔮
+- [ ] Phase 5: Performance optimization
+- [ ] Phase 6: Documentation & analysis
 - [ ] Next-line prefetching
 - [ ] Write-back policy (with Flash wear management)
 - [ ] Configurable cache size (runtime)
@@ -318,12 +316,12 @@ MIT License - See [LICENSE](LICENSE) file for details
 
 ---
 
-## 👨‍💻 Author
+##Author
 
-**[Your Name]**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+**Kannajosyula Harsha Vardhan**
+- GitHub: [@Harsha-s210313](https://github.com/Harsha-s210313)
+- LinkedIn: [harsha-vardhan-7a45b1303](https://www.linkedin.com/in/harsha-vardhan-7a45b1303/)
+
 
 **Built as preparation for FreeRTOS development and deep understanding 
 of embedded systems memory management.**
@@ -337,9 +335,6 @@ of embedded systems memory management.**
 - The embedded systems community for shared knowledge
 
 ---
-
-**⭐ If this project helped you understand cache architecture, give it a star!**
-
 ---
 
 ## 📊 Project Stats
